@@ -1,5 +1,6 @@
 import warnings
 warnings.filterwarnings('ignore')
+from nltk.corpus import stopwords
 from sklearn.feature_extraction.text import TfidfTransformer, CountVectorizer
 from sklearn.metrics import classification_report, confusion_matrix
 from sklearn.model_selection import train_test_split
@@ -10,8 +11,7 @@ from nltk.stem import WordNetLemmatizer
 
 nltk.download('wordnet')
 nltk.download('omw-1.4')
-nltk.download('stopwords')
-from nltk.corpus import stopwords
+
 from joblib import parallel, delayed
 import joblib
 
