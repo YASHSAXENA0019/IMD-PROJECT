@@ -1,6 +1,5 @@
 import warnings
 warnings.filterwarnings('ignore')
-from nltk.corpus import stopwords
 from sklearn.feature_extraction.text import TfidfTransformer, CountVectorizer
 from sklearn.metrics import classification_report, confusion_matrix
 from sklearn.model_selection import train_test_split
