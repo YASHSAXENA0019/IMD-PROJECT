@@ -16,7 +16,8 @@ from joblib import parallel, delayed
 import joblib
 
 import streamlit as st
-
+import pandas as pd
+df = pd.read_csv('Preprocessed Fake Reviews Dataset.csv')
 def clean_text(text):
     nopunc = [w for w in text if w not in string.punctuation]
     nopunc = ''.join(nopunc)
