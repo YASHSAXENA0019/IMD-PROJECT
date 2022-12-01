@@ -63,7 +63,7 @@ def main():
     """
     st.markdown(html_temp, unsafe_allow_html=True)
 
-    review = st.text_input("Text","Type Here")
+    review = st.text_input("Enter Review","Type Here")
     safe_html="""  
       <div style="background-color:#F08080;padding:10px >
        <h2 style="color:white;text-align:center;"> Please check the product carefully it might not be good.</h2>
